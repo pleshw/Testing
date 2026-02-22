@@ -4,21 +4,23 @@
 - Status: sem pendências
 
 ## Contexto da tarefa
-- Inclusão de `solicite` na interpretação mandatória dos prefixos em `AGENTS.md`, alinhando governança com o padrão já definido em `USERS.md`.
+- Inclusão do papel de Agente de Solicitação em `AGENTS.md` com sincronização em `USERS.md`.
 
 ## Checklist
-- [x] Verificação de dívidas técnicas críticas realizada.
-- [x] Avaliação de risco de divergência semântica entre `AGENTS.md` e `USERS.md`.
+- [x] Verificação de dívidas técnicas críticas para a nova revisão.
+- [x] Revalidação final após atualizações documentais.
 
 ## Itens
-- Nenhuma dívida técnica identificada até a última verificação.
+- Nenhuma dívida técnica identificada na validação final.
 
 ## Evidências rastreáveis
-- Atualização explícita de `AGENTS.md` para incluir `solicite` no bloco de interpretação mandatória.
+- `AGENTS.md` atualizado com novo papel operacional.
+- `USERS.md` atualizado com papel correspondente para o usuário.
+- `PLAN.md` atualizado com registro resumido da revisão 6.
 
 ## Próximo estado recomendado
-- Manter revisão cruzada sempre que novos prefixos forem introduzidos em `USERS.md`.
+- Preservar revisão cruzada de papéis entre os dois documentos de governança.
 
 ## Bloqueios e decisão tomada
 - Bloqueios: nenhum.
-- Decisão: arquivo mantido em conformidade com status sem pendências.
+- Decisão: manter status sem pendências.

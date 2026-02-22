@@ -6,64 +6,67 @@
 - Responsável: GPT-5.2-Codex
 
 ## Contexto
-- Objetivo: Incluir `solicite` na interpretação mandatória dos prefixos em `AGENTS.md`, sincronizando com o padrão já documentado em `USERS.md`.
-- Escopo: Atualização documental em `AGENTS.md`, consolidação resumida no `PLAN.md` e atualização dos logs obrigatórios em `AGENT_LOG`.
-- Não-escopo: Alterações de código da aplicação, criação/reordenação de macro-passos no `PLAN.md`, mudanças estruturais fora da governança de prefixos.
+- Objetivo: Adicionar suporte explícito para **Agente de Solicitação** em `AGENTS.md`, alinhado aos papéis de planejamento/execução/avaliação, e sincronizar `USERS.md` quando aplicável.
+- Escopo: Atualização documental em `AGENTS.md` e `USERS.md`, consolidação no `PLAN.md` e atualização completa dos logs em `AGENT_LOG`.
+- Não-escopo: Alterações de código da aplicação, mudança da ordem macro de passos, criação de novos macro-passos.
 
 ## Inventário de Ferramentas Reutilizáveis
 - Comando/script: `cat PLAN.md`
-  - Finalidade: Confirmar passo ativo e conformidade de execução.
+  - Finalidade: Confirmar passo ativo antes da implementação.
   - Status de validação: validado
 - Comando/script: `cat AGENTS.md`
-  - Finalidade: Localizar seção de interpretação mandatória dos prefixos.
+  - Finalidade: Localizar seção de papéis de agente para inserir o novo papel de solicitação.
+  - Status de validação: validado
+- Comando/script: `cat USERS.md`
+  - Finalidade: Sincronizar normas de usuário com novo papel em `AGENTS.md`.
   - Status de validação: validado
 - Comando/script: `python - <<'PY' ... PY`
-  - Finalidade: Inserir atualização textual de forma precisa e rastreável.
+  - Finalidade: Edição textual precisa e rastreável.
   - Status de validação: validado
-- Comando/script: `git diff -- AGENTS.md PLAN.md AGENT_LOG/*`
-  - Finalidade: Verificar escopo final e consistência documental.
+- Comando/script: `git diff -- AGENTS.md USERS.md PLAN.md AGENT_LOG/*`
+  - Finalidade: Validar escopo final e consistência.
   - Status de validação: validado
 
 ## Checklist Detalhada da Tarefa Atual
-- [x] Mapear alteração pontual solicitada e definir redação normativa para `solicite` em `AGENTS.md`.
-  - Expectativas de qualidade: Regra clara, mandatória e não conflitante com `planeje`, `execute`, `avalie`.
-  - Evidências esperadas: Diff no bloco de interpretação mandatória dos prefixos.
-- [x] Aplicar atualização em `AGENTS.md` incluindo `solicite`.
-  - Expectativas de qualidade: Compatibilidade semântica com `USERS.md` e governança vigente.
-  - Evidências esperadas: Linha nova no item de interpretação mandatória.
-- [x] Atualizar `PLAN.md` e logs obrigatórios com evidências da iteração.
-  - Expectativas de qualidade: Rastreabilidade completa e sem pendências críticas.
-  - Evidências esperadas: atualização em `PLAN.md`, `dividas_tecnicas` e `expectativas_pendentes`.
-- [x] Validar alterações e concluir checklist.
-  - Expectativas de qualidade: Comandos de verificação executados e saída consistente.
-  - Evidências esperadas: `git diff` e `git status`.
+- [x] Definir texto normativo do novo papel **Agente de Solicitação** em `AGENTS.md`.
+  - Expectativas de qualidade: papel claro, sem sobreposição indevida, e aderente ao prefixo `solicite`.
+  - Evidências esperadas: diff em seção de papéis do `AGENTS.md`.
+- [x] Sincronizar `USERS.md` para refletir o novo papel quando necessário.
+  - Expectativas de qualidade: consistência entre protocolos de agente e normas de usuário.
+  - Evidências esperadas: diff em seção de papéis/responsabilidades de `USERS.md`.
+- [x] Atualizar `PLAN.md` e logs obrigatórios com rastreabilidade da revisão.
+  - Expectativas de qualidade: checklist completa e status real sem pendências críticas.
+  - Evidências esperadas: nova linha no registro resumido + logs atualizados.
+- [x] Validar alterações, commitar e abrir PR.
+  - Expectativas de qualidade: árvore limpa após commit e PR registrado.
+  - Evidências esperadas: `git status --short`, hash do commit, chamada `make_pr`.
 
 ## Progresso
 - Status geral: concluído
 - Última atualização: 2026-02-22
 
 ## Riscos e Mitigações
-- Risco: Conflito interpretativo entre prefixo de facilitação (`solicite`) e prefixos operacionais.
-  - Mitigação: Definido explicitamente `solicite` como gatilho para geração do template preenchido, sem substituir intenções mandatórias.
-- Risco: Alteração incompleta sem atualização de rastreabilidade.
-  - Mitigação: Atualizados `PLAN.md` e todos os logs obrigatórios no mesmo ciclo.
+- Risco: Ambiguidade entre papel de solicitação e papel de planejamento.
+  - Mitigação: Definido que o agente de solicitação interpreta intenção e devolve template pronto, sem executar implementação direta por padrão.
+- Risco: Dessincronização entre `AGENTS.md` e `USERS.md`.
+  - Mitigação: Atualização conjunta dos dois documentos na mesma iteração.
 
 ## Critérios de Conclusão
-- [x] `AGENTS.md` atualizado com `solicite` na interpretação mandatória dos prefixos.
-- [x] `PLAN.md` atualizado com resumo desta revisão.
-- [x] `AGENT_LOG` atualizado com status real e sem pendências críticas.
-- [x] Validação final concluída e alterações prontas para commit.
+- [x] `AGENTS.md` com seção explícita do Agente de Solicitação.
+- [x] `USERS.md` sincronizado com o novo papel.
+- [x] `PLAN.md` e `AGENT_LOG` atualizados com evidências.
+- [x] Commit realizado e PR registrado via `make_pr`.
 
 ## Evidências de Execução
-- `cat PLAN.md` executado com leitura integral concluída.
-- `cat AGENT_LOG/plano_execucao_passo_1.md` executado para atualização do sub-plano.
-- `python - <<'PY' ... PY` executado para atualizar bloco de prefixos em `AGENTS.md`.
-- Atualização dos arquivos `AGENT_LOG/dividas_tecnicas_passo_1.md` e `AGENT_LOG/expectativas_pendentes_passo_1.md`.
-- `git diff -- AGENTS.md PLAN.md AGENT_LOG/*` e `git status --short` executados na validação final.
+- Leitura integral de `PLAN.md` antes de qualquer modificação.
+- Edição de `AGENTS.md` para incluir o item 4 (Agente de Solicitação) no modelo operacional.
+- Edição de `USERS.md` para incluir a subseção 3.4 (Agente de Solicitação).
+- Registro da revisão 6 no `PLAN.md`.
+- Validações via `git diff -- AGENTS.md USERS.md PLAN.md AGENT_LOG/*` e `git status --short`.
 
 ## Próximo estado recomendado
-- Prosseguir com novas demandas mantendo sincronização contínua entre prefixos em `AGENTS.md` e `USERS.md`.
+- Manter sincronização contínua entre papéis de agente em `AGENTS.md` e orientações de uso em `USERS.md`.
 
 ## Bloqueios e decisão tomada
 - Bloqueios: nenhum.
-- Decisão: execução concluída com checklist integral e sem pendências críticas.
+- Decisão: atualização documental concluída com aderência ao protocolo.

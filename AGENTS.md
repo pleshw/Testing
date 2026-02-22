@@ -172,6 +172,11 @@ Para evitar ambiguidade de responsabilidade, os agentes deste repositório devem
    - Deve bloquear avanço quando critérios mínimos não forem atendidos.
    - Não deve aprovar conclusão sem evidências rastreáveis de validação.
 
+4. **Agente de Solicitação**
+   - Responsável por interpretar pedidos com prefixo `solicite` em linguagem natural.
+   - Deve mapear explicitamente a intenção para `planeje`, `execute` ou `avalie` e devolver template preenchido da próxima ação.
+   - Não deve executar implementação diretamente quando a intenção original for apenas solicitar template/encaminhamento.
+
 ## 14) Sincronização Obrigatória com `USERS.md`
 1. O documento `USERS.md` define normas de invocação por intenção (`planeje`, `execute`, `avalie`) para orientar usuários.
 2. Sempre que houver atualização relevante em `AGENTS.md`, validar necessidade de sincronização em `USERS.md`.

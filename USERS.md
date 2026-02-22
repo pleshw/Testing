@@ -55,6 +55,11 @@ Use para revisão de qualidade, conformidade, riscos e aderência ao plano.
 - Deve verificar checklist, pendências críticas e qualidade das evidências.
 - Não deve aprovar avanço se critérios mínimos não forem atendidos.
 
+### 3.4 Agente de Solicitação
+- Interpreta pedidos com prefixo `solicite` em linguagem natural mínima.
+- Deve mapear a intenção para `planeje`, `execute` ou `avalie` e devolver template preenchido da próxima ação.
+- Não deve executar implementação direta quando a solicitação do usuário for apenas de encaminhamento/template.
+
 ## 4) Mapa de Decisão Rápida para Usuários
 - Se a tarefa ainda está indefinida: use `planeje`.
 - Se já existe sub-plano pronto e aprovado: use `execute`.
@@ -213,3 +218,34 @@ saída esperada: resumo detalhado e recomendações.
 - Informar qual intenção foi selecionada (`planeje`, `execute` ou `avalie`) e por quê.
 - Entregar um template preenchido pronto para execução da próxima ação.
 - Manter aderência às regras de governança em `AGENTS.md`.
+
+### 9.4 Exemplo direto para conclusão de plano em andamento
+```txt
+solicite: execute conclusão dos planos em andamento se existir algum
+saída esperada: template pronto para copiar e executar
+```
+
+**Template que o agente deve devolver (preenchido):**
+```txt
+execute: concluir o plano em andamento do passo ativo, se todos os critérios de qualidade estiverem atendidos
+
+Referência de planejamento:
+- Passo ativo no PLAN.md: Passo 1 (`[-] Em andamento`)
+- Sub-plano em AGENT_LOG: `AGENT_LOG/plano_execucao_passo_1.md`
+
+Prioridade e impacto:
+- Prioridade: alta
+- Impacto esperado: moderado
+
+Escopo de execução:
+- Incluir: conferência da checklist do sub-plano ativo, validações cabíveis, atualização de status e consolidação de evidências em `PLAN.md` e logs.
+- Não incluir: avanço para próximo passo sem checklist 100% concluída ou sem evidências mínimas.
+
+Validações exigidas:
+- `git diff -- PLAN.md AGENT_LOG/*`
+- `git status --short`
+
+Entregáveis esperados:
+- `PLAN.md` e arquivos de `AGENT_LOG` atualizados com status final do plano em andamento (quando aplicável)
+- resumo objetivo do que foi concluído e quais critérios foram atendidos
+```

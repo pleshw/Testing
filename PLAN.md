@@ -196,3 +196,8 @@ Ao concluir qualquer tarefa:
 | 2026-02-22 (revisão 3) | 1 (`[-] Em andamento`) | inclusão do padrão `solicite:` em `USERS.md` para pedir template preenchido da próxima ação com linguagem natural mínima | atualização de `USERS.md` + logs do passo 1 em `AGENT_LOG/` | feedback adicional atendido com orientação objetiva para prompts curtos |
 
 | 2026-02-22 (revisão 4) | 1 (`[-] Em andamento`) | inclusão de `solicite` na interpretação mandatória dos prefixos em `AGENTS.md` | atualização de `AGENTS.md` + logs do passo 1 em `AGENT_LOG/` | sincronização de prefixos concluída entre protocolo de agentes e normas de usuário |
+
+| 2026-02-22 (revisão 5) | 1 (`[-] Em andamento`) | inclusão de exemplo prático em `USERS.md` para `solicite: execute conclusão dos planos em andamento se existir algum` com template preenchido de próxima ação | atualização de `USERS.md` + atualização de logs do passo 1 em `AGENT_LOG/` | orientação operacional refinada para pedidos naturais de conclusão do plano ativo, sem pendências críticas |
+
+| 2026-02-22 (revisão 6) | 1 (`[-] Em andamento`) | inclusão do papel **Agente de Solicitação** em `AGENTS.md` com sincronização em `USERS.md` | atualização de `AGENTS.md`, `USERS.md` e logs do passo 1 em `AGENT_LOG/` | governança de papéis alinhada para `planeje`/`execute`/`avalie`/`solicite`, sem pendências críticas |
+
