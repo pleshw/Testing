@@ -40,7 +40,7 @@
 - [ ] Testes unitários mínimos cobrindo geometria da board e snapping.
 - [ ] Documentação técnica de estrutura inicial atualizada.
 
-**Status do passo:** `[ ] Não iniciado`
+**Status do passo:** `[-] Em andamento`
 
 ---
 

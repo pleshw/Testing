@@ -12,6 +12,8 @@ Escopo: todo o diretório raiz e subpastas.
 6. **Nunca crie passos adicionais no plano mais recente.** O plano macro só pode ser criado/alterado pelo agente responsável por planejamento.
 7. **Registre evidências de execução** (arquivos alterados, comandos, resultados de teste, validações) no log do passo.
 8. **Atualize status real de progresso** em todos os artefatos de planejamento usados (`PLAN.md` + sub-plano em `AGENT_LOG`).
+9. **Ao concluir o plano atual, consolide os dados de progresso no `PLAN.md`** com checklist, status final e evidências resumidas do passo.
+10. **Adicione e mantenha a flag `[-] Em execução`** em planos/sub-planos já iniciados e atualmente em andamento.
 
 ## 2) Sequência Obrigatória de Execução
 1. Ler `PLAN.md`.
