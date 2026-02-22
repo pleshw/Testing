@@ -4,22 +4,23 @@
 - Status: sem pendências
 
 ## Contexto da tarefa
-- Atendimento do ajuste pontual solicitado: adicionar `solicite` à interpretação mandatória dos prefixos em `AGENTS.md`.
+- Garantir suporte explícito ao Agente de Solicitação com responsabilidades claras e alinhadas ao uso do prefixo `solicite`.
 
 ## Checklist
-- [x] Verificação de expectativas críticas pendentes realizada.
-- [x] Confirmação de sincronização do prefixo `solicite` entre documentação de usuário e protocolo de agentes.
+- [x] Verificação de expectativas críticas para a iteração atual.
+- [x] Confirmação final de aderência entre `AGENTS.md`, `USERS.md` e `PLAN.md`.
 
 ## Itens
-- Nenhuma expectativa pendente identificada até a última verificação.
+- Nenhuma expectativa crítica pendente após validação final.
 
 ## Evidências rastreáveis
-- `AGENTS.md` atualizado com regra de interpretação do prefixo `solicite`.
-- Rastreabilidade consolidada em `PLAN.md` e `AGENT_LOG`.
+- Inserção do papel de Agente de Solicitação em `AGENTS.md`.
+- Inserção da seção 3.4 (Agente de Solicitação) em `USERS.md`.
+- Consolidação da revisão 6 no `PLAN.md` e sub-plano atualizado.
 
 ## Próximo estado recomendado
-- Preservar consistência dos quatro prefixos (`planeje`, `execute`, `avalie`, `solicite`) em futuras revisões.
+- Reaplicar o padrão de sincronização sempre que houver ajuste de papéis ou prefixos.
 
 ## Bloqueios e decisão tomada
 - Bloqueios: nenhum.
-- Decisão: arquivo mantido em conformidade com status sem pendências.
+- Decisão: execução encerrada sem pendências.
