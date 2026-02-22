@@ -73,5 +73,18 @@ A proposta combina:
 - As regras de atuação de agentes e governança de execução estão em `AGENTS.md`.
 - O plano de referência original do sistema está em `plano-sistema-simulador-protoboard.md`.
 
+## Estrutura inicial
+- `src/core`: modelos de domínio e lógica de base (grid, protoboard, tipos).
+- `src/editor`: estado de edição e contratos.
+- `src/simulation`: contratos de simulação.
+- `src/rendering`: camada visual e overlays (em evolução).
+- `src/ui`: componentes visuais e configuração de layout.
+- `src/session`: controle de sessão em memória (em evolução).
+
+## Como executar
+1. `npm install`
+2. `npm run dev`
+3. `npm run test`
+
 ## Resultado esperado
 Ao final do desenvolvimento, a aplicação deve permitir montagem de circuitos complexos com feedback elétrico confiável, visualizações técnicas claras e diagnósticos úteis para aprendizado e tomada de decisão em projetos eletrônicos.

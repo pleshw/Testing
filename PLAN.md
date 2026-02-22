@@ -24,23 +24,23 @@
 **Objetivo:** estabelecer a base técnica mínima do produto e fluxo inicial de montagem visual.
 
 **Checklist de desenvolvimento detalhada**
-- [ ] Inicializar projeto TypeScript + React + Vite com estrutura modular clara.
-- [ ] Criar organização de pastas por domínio (`core`, `simulation`, `editor`, `rendering`, `ui`, `session`).
-- [ ] Definir modelos iniciais de domínio (protoboard, nó, trilha, componente, pino, fio, fonte).
-- [ ] Implementar protoboard com grade e mapeamento interno de trilhas.
-- [ ] Implementar drag and drop básico da biblioteca para a placa.
-- [ ] Implementar snapping em furos/trilhas válidas.
-- [ ] Criar camada visual inicial (board + componentes básicos).
-- [ ] Garantir renderização fluida em cenário simples.
+- [x] Inicializar projeto TypeScript + React + Vite com estrutura modular clara.
+- [x] Criar organização de pastas por domínio (`core`, `simulation`, `editor`, `rendering`, `ui`, `session`).
+- [x] Definir modelos iniciais de domínio (protoboard, nó, trilha, componente, pino, fio, fonte).
+- [x] Implementar protoboard com grade e mapeamento interno de trilhas.
+- [x] Implementar drag and drop básico da biblioteca para a placa.
+- [x] Implementar snapping em furos/trilhas válidas.
+- [x] Criar camada visual inicial (board + componentes básicos).
+- [x] Garantir renderização fluida em cenário simples.
 
 **Expectativas de qualidade para concluir o passo**
-- [ ] Código com tipagem forte e sem `any` não justificado.
-- [ ] Separação entre estado de edição e estado de simulação definida em contrato.
-- [ ] Base executável local sem dependências externas.
-- [ ] Testes unitários mínimos cobrindo geometria da board e snapping.
-- [ ] Documentação técnica de estrutura inicial atualizada.
+- [x] Código com tipagem forte e sem `any` não justificado.
+- [x] Separação entre estado de edição e estado de simulação definida em contrato.
+- [x] Base executável local sem dependências externas.
+- [x] Testes unitários mínimos cobrindo geometria da board e snapping.
+- [x] Documentação técnica de estrutura inicial atualizada.
 
-**Status do passo:** `[-] Em andamento`
+**Status do passo:** `[x] Concluído (com dívida técnica aceita)`
 
 ---
 
@@ -201,3 +201,8 @@ Ao concluir qualquer tarefa:
 
 | 2026-02-22 (revisão 6) | 1 (`[-] Em andamento`) | inclusão do papel **Agente de Solicitação** em `AGENTS.md` com sincronização em `USERS.md` | atualização de `AGENTS.md`, `USERS.md` e logs do passo 1 em `AGENT_LOG/` | governança de papéis alinhada para `planeje`/`execute`/`avalie`/`solicite`, sem pendências críticas |
 
+| 2026-02-22 (planejamento) | 1 (`[-] Em andamento`) | planejamento dos itens restantes do Passo 1 para viabilizar conclusao | atualizacao de `AGENT_LOG/plano_execucao_passo_1.md` | sub-plano detalhado criado/atualizado com checklist e criterios de qualidade |
+| 2026-02-22 (execucao) | 1 (`[-] Em andamento`) | base Vite + React + TS, estrutura por dominio, modelos iniciais, grid/protoboard, DnD e snapping, testes unitarios | `package.json`, `src/`, `vite.config.ts`, `src/core/board/grid.test.ts` | execucao parcial com pendencias de validacao manual e `npm audit` |
+| 2026-02-22 (execucao) | 1 (`[-] Em andamento`) | validacao manual confirmada pelo usuario (DnD/renderizacao) + remocao de `_tmp_vite` | confirmacao do usuario registrada em `AGENT_LOG/` | passo segue pendente por vulnerabilidades reportadas em `dividas_tecnicas_passo_1.md` |
+| 2026-02-22 (execucao) | 1 (`[-] Em andamento`) | relatorio `npm audit` confirmado pelo usuario (minimatch sem fix) | confirmacao do usuario registrada em `AGENT_LOG/` | pendencia de seguranca permanece sem fix disponivel |
+| 2026-02-22 (encerramento) | 1 (`[x] Concluido`) | aceite formal da divida tecnica e encerramento do Passo 1 | `AGENT_LOG/dividas_tecnicas_passo_1.md` e `AGENT_LOG/plano_execucao_passo_1.md` | passo concluido com divida tecnica aceita |

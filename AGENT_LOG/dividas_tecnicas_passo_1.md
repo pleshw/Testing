@@ -1,26 +1,31 @@
-# Dívidas Técnicas — Passo 1
+# Dividas Tecnicas — Passo 1
 - Data: 2026-02-22
-- Responsável: GPT-5.2-Codex
-- Status: sem pendências
+- Responsavel: GPT-5.2-Codex
+- Status: com pendencias
 
 ## Contexto da tarefa
-- Inclusão do papel de Agente de Solicitação em `AGENTS.md` com sincronização em `USERS.md`.
+- Execucao dos itens restantes do Passo 1 para viabilizar conclusao.
 
 ## Checklist
-- [x] Verificação de dívidas técnicas críticas para a nova revisão.
-- [x] Revalidação final após atualizações documentais.
+- [x] Revisao de dividas tecnicas pendentes para a execucao atual.
 
 ## Itens
-- Nenhuma dívida técnica identificada na validação final.
+- [!] Divida: vulnerabilidades apontadas pelo `npm install` (aceite formal do usuario para encerrar o passo).
+  - Impacto: risco de seguranca nas dependencias de desenvolvimento.
+  - Severidade: alta (7 altas reportadas no `npm audit`).
+  - Plano de quitacao: avaliar alternativa de dependencia ou aceitar risco (sem fix disponivel).
+  - Prazo sugerido: antes de concluir o Passo 1, salvo aceite formal.
+  - Aceite formal: confirmado pelo usuario em 2026-02-22.
 
-## Evidências rastreáveis
-- `AGENTS.md` atualizado com novo papel operacional.
-- `USERS.md` atualizado com papel correspondente para o usuário.
-- `PLAN.md` atualizado com registro resumido da revisão 6.
+## Evidencias rastreaveis
+- Saida do `npm install` indicando vulnerabilidades.
+- Confirmacao do usuario: pasta `_tmp_vite` removida manualmente.
+- Relatorio do usuario via `npm audit` indicando vulnerabilidade em `minimatch` sem fix disponivel.
+- Confirmacao do usuario: aceite formal da divida tecnica para encerramento do Passo 1.
 
-## Próximo estado recomendado
-- Preservar revisão cruzada de papéis entre os dois documentos de governança.
+## Proximo estado recomendado
+- Tratar vulnerabilidades reportadas pelo `npm audit`.
 
-## Bloqueios e decisão tomada
+## Bloqueios e decisao tomada
 - Bloqueios: nenhum.
-- Decisão: manter status sem pendências.
+- Decisao: pendencia aceita formalmente para concluir o passo.

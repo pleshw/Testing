@@ -1,26 +1,25 @@
 # Expectativas Pendentes — Passo 1
 - Data: 2026-02-22
-- Responsável: GPT-5.2-Codex
-- Status: sem pendências
+- Responsavel: GPT-5.2-Codex
+- Status: sem pendencias
 
 ## Contexto da tarefa
-- Garantir suporte explícito ao Agente de Solicitação com responsabilidades claras e alinhadas ao uso do prefixo `solicite`.
+- Execucao dos itens restantes do Passo 1 com criterios de qualidade.
 
 ## Checklist
-- [x] Verificação de expectativas críticas para a iteração atual.
-- [x] Confirmação final de aderência entre `AGENTS.md`, `USERS.md` e `PLAN.md`.
+- [x] Revisao de expectativas pendentes para o planejamento atual.
+- [x] Validacao manual de DnD e renderizacao inicial em ambiente local.
+- [x] Confirmacao de execucao local via `npm run dev`.
 
 ## Itens
-- Nenhuma expectativa crítica pendente após validação final.
+- Nenhuma expectativa critica pendente apos confirmacao do usuario.
 
-## Evidências rastreáveis
-- Inserção do papel de Agente de Solicitação em `AGENTS.md`.
-- Inserção da seção 3.4 (Agente de Solicitação) em `USERS.md`.
-- Consolidação da revisão 6 no `PLAN.md` e sub-plano atualizado.
+## Evidencias rastreaveis
+- Confirmacao do usuario sobre execucao local e validacao manual.
 
-## Próximo estado recomendado
-- Reaplicar o padrão de sincronização sempre que houver ajuste de papéis ou prefixos.
+## Proximo estado recomendado
+- Encerramento do passo permitido (sem pendencias de expectativas).
 
-## Bloqueios e decisão tomada
+## Bloqueios e decisao tomada
 - Bloqueios: nenhum.
-- Decisão: execução encerrada sem pendências.
+- Decisao: pendencias de expectativas encerradas.
