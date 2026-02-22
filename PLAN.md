@@ -182,3 +182,17 @@ Ao concluir qualquer tarefa:
 2. Atualizar status do passo (`[ ]`, `[-]`, `[x]`, `[!]`).
 3. Registrar evidências no log do agente.
 4. Confirmar se há pendência de qualidade antes de avançar.
+
+
+## 7. Registro Resumido de Execuções
+> Manter somente as execuções mais recentes neste plano. O detalhamento completo deve permanecer em `AGENT_LOG/`.
+
+| Data | Passo | Tarefa | Evidências | Resultado |
+| --- | --- | --- | --- | --- |
+| 2026-02-22 | 1 (`[-] Em andamento`) | criação do `USERS.md` e sincronização de normas de intenção/papéis com `AGENTS.md` | atualização de `AGENTS.md`, criação de `USERS.md` e logs do passo 1 em `AGENT_LOG/` | entrega documental concluída sem pendências críticas |
+| 2026-02-22 (revisão) | 1 (`[-] Em andamento`) | inclusão de templates base por intenção de prompt em `USERS.md` | atualização de `USERS.md` + atualização de logs do passo 1 em `AGENT_LOG/` | lacuna da entrega anterior endereçada sem pendências críticas |
+| 2026-02-22 (revisão 2) | 1 (`[-] Em andamento`) | melhorias de governança em `USERS.md` (anti-padrões, matriz, templates refinados e sincronização reversa) + organização enxuta do registro | atualização de `USERS.md`, `PLAN.md` e logs do passo 1 em `AGENT_LOG/` | documentação operacional refinada e alinhada ao feedback, sem pendências críticas |
+
+| 2026-02-22 (revisão 3) | 1 (`[-] Em andamento`) | inclusão do padrão `solicite:` em `USERS.md` para pedir template preenchido da próxima ação com linguagem natural mínima | atualização de `USERS.md` + logs do passo 1 em `AGENT_LOG/` | feedback adicional atendido com orientação objetiva para prompts curtos |
+
+| 2026-02-22 (revisão 4) | 1 (`[-] Em andamento`) | inclusão de `solicite` na interpretação mandatória dos prefixos em `AGENTS.md` | atualização de `AGENTS.md` + logs do passo 1 em `AGENT_LOG/` | sincronização de prefixos concluída entre protocolo de agentes e normas de usuário |

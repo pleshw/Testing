@@ -4,19 +4,21 @@
 - Status: sem pendências
 
 ## Contexto da tarefa
-- Inclusão de imperativos no protocolo AGENTS para governança de progresso do plano.
+- Atendimento do ajuste pontual solicitado: adicionar `solicite` à interpretação mandatória dos prefixos em `AGENTS.md`.
 
 ## Checklist
 - [x] Verificação de expectativas críticas pendentes realizada.
+- [x] Confirmação de sincronização do prefixo `solicite` entre documentação de usuário e protocolo de agentes.
 
 ## Itens
 - Nenhuma expectativa pendente identificada até a última verificação.
 
 ## Evidências rastreáveis
-- Escopo da tarefa delimitado e checklist operacional criada no sub-plano.
+- `AGENTS.md` atualizado com regra de interpretação do prefixo `solicite`.
+- Rastreabilidade consolidada em `PLAN.md` e `AGENT_LOG`.
 
 ## Próximo estado recomendado
-- Revalidar após conclusão das alterações para confirmar manutenção de conformidade.
+- Preservar consistência dos quatro prefixos (`planeje`, `execute`, `avalie`, `solicite`) em futuras revisões.
 
 ## Bloqueios e decisão tomada
 - Bloqueios: nenhum.

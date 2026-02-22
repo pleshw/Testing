@@ -152,3 +152,32 @@ Arquivo: `AGENT_LOG/expectativas_pendentes_passo_x.md`
 ## 12) Regra Final de Conduta
 **Planejar, executar, validar, registrar e só então avançar.**
 Sem cumprimento dessa sequência, a execução deve ser considerada incompleta.
+
+
+## 13) Modelo Operacional por Tipo de Agente
+Para evitar ambiguidade de responsabilidade, os agentes deste repositório devem operar com um papel explícito:
+
+1. **Agente de Planejamento**
+   - Responsável por estruturar/atualizar plano e sub-plano.
+   - Deve confirmar passo ativo, escopo, não-escopo, critérios de qualidade e riscos.
+   - Não deve executar tarefas de implementação fora do contexto de planejamento.
+
+2. **Agente de Execução**
+   - Responsável por implementar somente itens autorizados no plano/sub-plano ativo.
+   - Deve validar resultados, registrar evidências e atualizar status real nos artefatos.
+   - Não deve alterar ordem macro de `PLAN.md` nem criar novos macro-passos.
+
+3. **Agente de Avaliação**
+   - Responsável por auditar aderência entre demanda, planejamento, execução e qualidade.
+   - Deve bloquear avanço quando critérios mínimos não forem atendidos.
+   - Não deve aprovar conclusão sem evidências rastreáveis de validação.
+
+## 14) Sincronização Obrigatória com `USERS.md`
+1. O documento `USERS.md` define normas de invocação por intenção (`planeje`, `execute`, `avalie`) para orientar usuários.
+2. Sempre que houver atualização relevante em `AGENTS.md`, validar necessidade de sincronização em `USERS.md`.
+3. Interpretação mandatória dos prefixos:
+   - **`planeje`**: verificar se o próximo passo já está planejado; se não estiver, elaborar plano/sub-plano antes de executar.
+   - **`execute`**: executar apenas tarefa do passo ativo com validação e evidências.
+   - **`avalie`**: auditar conformidade e qualidade antes de qualquer avanço.
+   - **`solicite`**: interpretar o pedido em linguagem natural e devolver template preenchido da próxima ação, mapeando explicitamente para `planeje`, `execute` ou `avalie`.
+4. Se houver conflito entre pedido do usuário e este protocolo, prevalece a governança deste `AGENTS.md`.
